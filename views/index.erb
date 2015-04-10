@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Vote register</title>
+  </head>
+  <body>
+    <p>Whic language you prefer?</p>
+    <form action='/conform' method='post'>
+      <ul class='unstyled'>
+        <% Choices.each do |id, text| %>
+          <li>
+              <input type='radio' name='vote' value='<%= id %>' id='vote_<%= id %>' />
+              <%= text %>
+          </li>
+        <% end %>
+      </ul>
+      <button type='submit' class='btn btn-primary'>Conform</button>
+    </form>
+  </body>
+</html>

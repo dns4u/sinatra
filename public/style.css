@@ -1,0 +1,9 @@
+button{
+  background-color:skyblue;
+  color:white;
+}
+form, input,select,textarea,button{
+  font-size:24px;
+  text-height:max-size;
+  margin: 10px;
+}

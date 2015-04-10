@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <title>User</title>
+  </head>
+  <body>
+    <p>Current user in your database are</p>
+    <form action='/conform' method='post'>
+      <ul>
+        <% Id.each do|i| %>
+          <li>
+            <% i.each do|j|%>
+              <%=j %>
+            <% end %>
+          </li>
+        <% end %>
+      </ul>
+      <button type='submit' class='btn btn-primary'>Conform</button>
+    </form>
+  </body>
+</html>
